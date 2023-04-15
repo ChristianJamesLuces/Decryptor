@@ -32,7 +32,6 @@ while True:
 
     # Asking the user if they want to try it again
     answer = str(input("\nDo you want to try it again? (Yes or No): "))
-
     # If the user want to try it again 
     if answer in yes_option:
         print("\n\n")
@@ -43,8 +42,14 @@ while True:
         print(">" * 100)
         break
     # If the user did not input a valid answer
-    while answer not in no_option and yes_option:
+    while answer not in no_option + yes_option:
         print("Invalid Input")
         answer = str(input("\nDo you want to try it again? (Yes or No): "))
-    # Exit the loop after a valid input is given
+        # Exit the loop if they do not want to try it again
+        if answer in no_option:
+                print("\n" + "<" * 100)
+                print(gratitude.center(100))
+                print(">" * 100)
+                exit() 
+
     # Go back to the start of the loop
