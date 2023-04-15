@@ -47,9 +47,10 @@ while True:
         answer = str(input("\nDo you want to try it again? (Yes or No): "))
         # Exit the loop if they do not want to try it again
         if answer in no_option:
-                print("\n" + "<" * 100)
-                print(gratitude.center(100))
-                print(">" * 100)
-                exit() 
-
-    # Go back to the start of the loop
+            print("\n" + "<" * 100)
+            print(gratitude.center(100))
+            print(">" * 100)
+            exit() 
+        # Go back to the start of the loop
+        elif answer in yes_option:
+             continue
