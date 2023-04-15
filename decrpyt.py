@@ -27,7 +27,7 @@ for char in ask:
         output += "\033[91;4;1m" + special_characters[char] + "\033[0m"
 
 # print the output
-print(("\033[1m" + "The decrypted input is: " + "\033[1m" + output))
+print(("\033[93m" + "The decrypted input is: " + "\033[0m" + output))
 # Asking the user if they want to try it again
 # If the user want to try it again 
 # If the user do not want to try it again
