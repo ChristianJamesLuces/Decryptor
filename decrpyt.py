@@ -15,6 +15,7 @@ print("\033[45;1m" + "This program will decrypt your encrypted input using the f
 print("\033[93m" + character_susbsitute + "\033[0m")
 print("-" * 100)
 # ask the user for input
+ask = str(input("\033[1m" + "Enter a string to decrypt: " + "\033[0m"))
 # check each character
 # if *, change it to a
 # if &, change it to e
